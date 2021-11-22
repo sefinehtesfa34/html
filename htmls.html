@@ -13,6 +13,7 @@
         <h1>CHECKING FOR GIT PULL</h1>
     <h1>Added or updated heading</h1>
     <h1>My form demo</h1>
+    <p id="demo">displayed here</p>
     <form>
 <label for="first name">First name</label><br>
 <input type="text" id ="first name" name="first name"><br>
@@ -20,9 +21,14 @@
 <input type="text" id="lastl name" name="last name"><br>
 <label for="id nmber">ID number</label><br>
 <input type="text" id="id number" name="id number"><br>
+<input type="submit" onclick="myFun()">
 
     </form>
         
-        <script src="" async defer></script>
+        <script>
+        function myFun(){
+        document.getElementById('demo').innerHTML='<H1>Welcome back</H1>'
+        }
+        </script>
     </body>
 </html>
